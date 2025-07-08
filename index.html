@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HealthBytes - Home</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <header>
+        <h1>Welcome to HealthBytes</h1>
+        <a href="#home" class="skip-link">Skip to main content</a>
+        <button id="accessibilityToggle" class="accessibility-btn" aria-label="Toggle High Contrast Mode">
+            ♿ Accessibility
+        </button>
+        <nav>
+            <ul>
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="contact.html">Contact us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div id="home">
+        <div class="middleText">
+            <article>
+                <h2>Your Health, Our Services</h2>
+                <p>
+                    We are Hungary's top ranked medical assistance team currently having
+                    <br />main office in Budapest, We specialize in the treatment of
+                    modern diseases <br />
+                    that cause the long term health infections and viruse. <br />We are
+                    here for a change in your Life.
+                </p>
+            </article>
+            <button id="bookBtn">Book an Appointment</button>
+        </div>
+        <div class="about-video">
+            <div class="video-container">
+                <video controls poster="./media/medic.avif" width="420" height="250" src="./media/health-video.mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <details class="video-description">
+                    <summary>Video Transcript</summary>
+                    <div class="transcript-content">
+                        <p>
+                            "The video begins with a boy getting out of a car and start
+                            vomitting because he takes vape alot. at 10. second a girl is
+                            showing headache and then at 15th second is showing who got
+                            admiited due to excessive vaping. Video ends by saying that
+                            "Every vape is hit to your heart" giving message not to vape.
+                        </p>
+                    </div>
+                </details>
+            </div>
+        </div>
+    </div>
+    <div class="getStarted">
+        <article>
+            <h2>Get Started Today!</h2>
+            <p>
+                Your health is our priority. Book a consultation, explore our
+                resources, or start your wellness journey today.!
+            </p>
+            <aside>
+                <h4>Our Location</h4>
+                <p>Street no: 1223 Blaha Lujza ter Dist: VII Budapest, Hungary.</p>
+            </aside>
+            <p>Get expert health advice from the comfort of your home!</p>
+        </article>
+    </div>
+
+    <!-- <footer>&copy; 2025 HealthBytes | All Rights Reserved</footer> -->
+    <footer class="site-footer">
+        <div class="footer-content">
+            <p>&copy; 2025 HealthBytes. All rights reserved.</p>
+            <nav class="footer-nav">
+                <a href="./index.html">Home</a>
+                <a href="./services.html">Services</a>
+                <a href="./contact.html">Contact</a>
+            </nav>
+            <div class="social-links">
+                <a href="https://www.linkedin.com/in/maghandas" target="_blank" rel="noopener">LinkedIn</a>
+                <a href="https://github.com/maghandas" target="_blank" rel="noopener">GitHub</a>
+                <a href="https://www.instagram.com/maghan.das" target="_blank" rel="noopener">Instagram</a>
+            </div>
+        </div>
+    </footer>
+    <script>
+        const bookBtn = document.getElementById("bookBtn");
+        bookBtn.addEventListener("click", function () {
+            alert("Thank you for choosing HealthBytes! We'll contact you soon.");
+        });
+    </script>
+</body>
+<script src="script.js"></script>
+</html>

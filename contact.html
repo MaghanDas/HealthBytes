@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Contact Us HealthBytes -</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <h1>Send us a Message!!</h1>
+                    <a href="#contact-form" class="skip-link">Skip to main content</a>
+
+        <button id="accessibilityToggle" class="accessibility-btn" aria-label="Toggle High Contrast Mode">
+    ♿ Accessibility
+</button>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="contact.html" class="active">Contact us </a></li>
+            </ul>
+        </nav>
+    </header>
+    <section id="contact-form">
+            <h2>Contact Form</h2>
+        <form action="mailto:dasmaghan23@example.com" method="post" enctype="text/plain">
+            <!-- text-field  -->
+            <label for="name">Full Name: </label>
+            <input type="text" name="name" id="name" placeholder="enter your full name: "  required maxlength="50">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="enter your email: " required maxlength="50">
+            <!-- Text Area -->
+            <label for="message">Message: </label>
+            <textarea id="message" name="message" rows="4" placeholder="Enter your message" required maxlength="200"></textarea>
+            <!-- radio buttons  -->
+            <label>Gender:</label>
+            <input type="radio" name="gender" id="male" value="male" required>
+            <label for="male"> Male</label>
+            <input type="radio" name="gender" id="female" value="female">
+            <label for="female"> Female</label>
+            <input type="radio" name="gender" id="other" value="other">
+            <label for="other"> Other</label>
+            <!-- checkboxes -->
+            <label>
+                <input type="checkbox" id="subscribe" name="nletter" value="yes">
+                Subsribe to newsletter
+            </label>
+
+            <!-- submit button  -->
+            <input type="submit" value="submit">
+        </form>
+    </section>
+     <footer class="site-footer">
+    <div class="footer-content">
+            <p>&copy; 2025 HealthBytes. All rights reserved.</p>
+        <nav class="footer-nav">
+            <a href="./index.html">Home</a>
+            <a href="./services.html">Services</a>
+            <a href="./contact.html">Contact</a>
+        </nav>
+        <div class="social-links">
+            <a href="https://www.linkedin.com/in/maghandas" target="_blank" rel="noopener">LinkedIn</a>
+            <a href="https://github.com/maghandas" target="_blank" rel="noopener">GitHub</a>
+            <a href="https://www.instagram.com/maghan.das" target="_blank" rel="noopener">Instagram</a>
+        </div>
+    </div>
+</footer>
+</body>
+<script src="script.js"></script>
+
+</html>
